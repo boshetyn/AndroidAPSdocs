@@ -21,6 +21,7 @@ Hardware and Software Requirements
    -  |RileyLink| `433MHz RileyLink <https://getrileylink.org/product/rileylink433>`__
    -  |EmaLink|  `Emalink Website <https://github.com/sks01/EmaLink>`__ - `Contact Info <mailto:getemalink@gmail.com>`__     
    -  |LoopLink|  `LoopLink Website <https://www.getlooplink.org/>`__ - `Contact Info <https://jameswedding.substack.com/>`__ - Untested
+   -  |DiaLink|  `Dialink Website <https://www.instagram.com/boshetyn/>`__ - `Contact Info <mailto:boshetyn@ukr.net>`__  
 
 *  |Android_Phone|  **Mobile Phone Device** 
 
@@ -138,7 +139,7 @@ Before you can activate a pod please ensure you have properly configured and con
 
     |Activate_Pod_1| |Activate_Pod_2|
 
-2. The **Fill Pod** screen is displayed. Fill a new pod with at least 80 units of insulin and listen for two beeps indicating that the pod is ready to be primed. When calculating the total amount of insulin you need for 3 days, please take into account that priming the pod will use 12 to 15 units. 
+2. The **Fill Pod** screen is displayed. Fill a new pod with at least 85 units of insulin and listen for two beeps indicating that the pod is ready to be primed.
 
     |Activate_Pod_3|
 
@@ -567,7 +568,7 @@ RileyLink
 
 Allows for scanning of a RileyLink device. The Omnipod driver cannot select more than one RileyLink device at a time.
 
-* **Use battery level reported by OrangeLink/EmaLink:** Reports the actual battery level of the OrangeLink/EmaLink. It is **strongly recommend** that all OrangeLink/EmaLink users enable this setting.
+* **Use battery level reported by OrangeLink/EmaLink/DiaLink:** Reports the actual battery level of the OrangeLink/EmaLink/Dialink2.8 or higer. It is **strongly recommend** that all OrangeLink/EmaLink/Dialink2.8 or higer users enable this setting.
 
 	+  DOES NOT work with the original RileyLink.
 	+  May not work with RileyLink alternatives.
@@ -695,11 +696,11 @@ Reporting of the amount of insulin in the Omnipod Eros Pod is not exact.  This i
 
 **Battery Level**
 
-Battery level reporting is a setting that can be enabled to return the current battery level of pod communicaton devices like the OrangeLink and EmaLink.  The RileyLink hardware is not capable of reporting its battery level.  The battery level is reported after each communication with the pod, so when charging a linear increase may not be observed.  A manual refresh will update the current battery level.  When a supported Pod communicaton device is disconnected a value of 0% will be reported.
+Battery level reporting is a setting that can be enabled to return the current battery level of pod communicaton devices like the OrangeLink, EmaLink or DiaLink.  The RileyLink hardware is not capable of reporting its battery level.  The battery level is reported after each communication with the pod, so when charging a linear increase may not be observed.  A manual refresh will update the current battery level.  When a supported Pod communicaton device is disconnected a value of 0% will be reported.
 
   * **RileyLink hardware is NOT capable of report battery level** 
-  * **Use battery level reported by OrangeLink/EmaLink Setting MUST be enabled in the Omnipod settings to reporting battery level values**
-  * **Battery Level ONLY works for OrangeLink and EmaLink Devices**
+  * **Use battery level reported by OrangeLink/EmaLink/DiaLink Setting MUST be enabled in the Omnipod settings to reporting battery level values**
+  * **Battery Level ONLY works for OrangeLink, EmaLink and DiaLink (firmware BLE 2.8 or higer) Devices**
   * **Battery Level reporting MAY work for other devices (excluding RileyLink)**
   * **SMS** - Returns current battery level as a response when an actual level exists, a value of n/a will not be returned.
   * **Nightscout** - Battery level is reported when an actual level exists, value of n/a will not be reported
@@ -843,6 +844,7 @@ All of the development work for the Omnipod driver is done by the community on a
 .. |RileyLink|				image:: ../images/omnipod/RileyLink.png
 .. |Android_phone|			image:: ../images/omnipod/Android_phone.png	
 .. |Omnipod_Pod|			image:: ../images/omnipod/Omnipod_Pod.png
+.. |DiaLink|				image:: ../images/omnipod/DiaLink.png
 	
 ..
 		Acknowledge Alerts
